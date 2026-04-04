@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+        * {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Sidebar animations */
+        .sidebar {
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar.closed {
+            transform: translateX(-100%);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Image hover effect */
+        .prompt-card img {
+            transition: transform 0.3s ease;
+        }
+
+        .prompt-card:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Loading animation */
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .animate-pulse-custom {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        /* Badge animation */
+        .badge-new {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-4px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Sidebar -->
+    <aside id="sidebar"
+        class="sidebar fixed left-0 top-0 h-screen w-64 bg-gradient-to-b from-gray-900 to-gray-800 text-white p-6 overflow-y-auto shadow-2xl z-40">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-3 mb-10">
+            <div
+                class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-lg font-bold">
+                🎨
+            </div>
+            <div>
+                <h1 class="text-xl font-bold">Prompt Gallery</h1>
+                <p class="text-xs text-gray-400">AI Art Collection</p>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="mb-8">
+            <input type="text" id="searchInput" placeholder="Search prompts..."
+                class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500">
+        </div>
+
+        <!-- Categories -->
+        <div class="mb-10">
+            <h2 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">Categories</h2>
+            <div id="categoriesList" class="space-y-2">
+                <!-- Categories will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Toggle button (mobile) -->
+        <button id="closeSidebarBtn" class="hidden md:hidden absolute top-4 right-4 text-white text-2xl">×</button>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="md:ml-64">
+        <!-- Top Bar -->
+        <header class="sticky top-0 bg-white shadow-sm z-30">
+            <div class="flex items-center justify-between px-6 py-4">
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-2xl text-gray-700">☰</button>
+
+                <!-- Title -->
+                <h1 class="text-2xl font-bold text-gray-900">AI Prompt Gallery</h1>
+            </div>
+
+        </header>
+
+        <!-- Content Area -->
+        <main class="p-6 md:p-8">
+
+            <!-- No results -->
+            <div id="noResults" class="hidden text-center py-12">
+                <p class="text-gray-500 text-lg mb-2">No prompts found</p>
+                <p class="text-gray-400 text-sm">Try adjusting your search or filters</p>
+            </div>
+
+            <!-- Grid -->
+            <div id="promptsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Prompts will be loaded here -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="loadMoreBtn"
+                    class="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg transition hidden">
+                    Load More
+                </button>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <button id="closeModalBtn"
+                class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">×</button>
+
+            <div id="modalContent" class="p-6 md:p-8">
+                <!-- Modal content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="copy-text.js"></script>
+    <script src="category.js"></script>
+    <script src="modal.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

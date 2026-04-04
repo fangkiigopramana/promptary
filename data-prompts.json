@@ -1,0 +1,136 @@
+{
+  "prompts": [
+    {
+      "id": 1,
+      "title": "Futuristic City",
+      "category": "Architecture",
+      "prompt": "A futuristic cyberpunk city with neon lights, flying cars, and towering skyscrapers in a cyberpunk aesthetic",
+      "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=500&h=500&fit=crop",
+      "author": "AI Art Studio",
+      "date": "2024-04-02",
+      "likes": 234,
+      "views": 1250
+    },
+    {
+      "id": 2,
+      "title": "Forest Portal",
+      "category": "Fantasy",
+      "prompt": "A magical forest with a glowing portal in the center, surrounded by ancient trees and mystical creatures",
+      "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&h=500&fit=crop",
+      "author": "Magic Realm",
+      "date": "2024-04-01",
+      "likes": 456,
+      "views": 2100
+    },
+    {
+      "id": 3,
+      "title": "Ocean Waves",
+      "category": "Nature",
+      "prompt": "Massive ocean waves crashing against rocky cliffs during a dramatic sunset with golden light",
+      "image": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500&h=500&fit=crop",
+      "author": "Nature Capture",
+      "date": "2024-03-31",
+      "likes": 567,
+      "views": 3450
+    },
+    {
+      "id": 4,
+      "title": "Abstract Nebula",
+      "category": "Space",
+      "prompt": "Colorful abstract nebula with cosmic dust, stars, and vibrant colors of purple, blue, and orange",
+      "image": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=500&h=500&fit=crop",
+      "author": "Cosmic Art",
+      "date": "2024-03-30",
+      "likes": 345,
+      "views": 1890
+    },
+    {
+      "id": 5,
+      "title": "Steampunk Robot",
+      "category": "Sci-Fi",
+      "prompt": "A detailed steampunk robot with brass gears, copper details, and glowing steam vents",
+      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=500&fit=crop",
+      "author": "Mechanical Dreams",
+      "date": "2024-03-29",
+      "likes": 289,
+      "views": 1567
+    },
+    {
+      "id": 6,
+      "title": "Cherry Blossom Garden",
+      "category": "Nature",
+      "prompt": "A serene Japanese garden filled with pink cherry blossoms, stone paths, and a peaceful pond",
+      "image": "https://images.unsplash.com/photo-1522783514446-a66dd298db5e?w=500&h=500&fit=crop",
+      "author": "Garden Art",
+      "date": "2024-03-28",
+      "likes": 512,
+      "views": 2876
+    },
+    {
+      "id": 7,
+      "title": "Northern Lights",
+      "category": "Nature",
+      "prompt": "Aurora Borealis dancing across the night sky in shades of green and purple over a frozen landscape",
+      "image": "https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?w=500&h=500&fit=crop",
+      "author": "Night Sky",
+      "date": "2024-03-27",
+      "likes": 678,
+      "views": 3890
+    },
+    {
+      "id": 8,
+      "title": "Dragon Fantasy",
+      "category": "Fantasy",
+      "prompt": "A majestic golden dragon perched on a mountain of treasures with an epic fantasy landscape",
+      "image": "https://images.unsplash.com/photo-1578866949228-8f21f4e59b24?w=500&h=500&fit=crop",
+      "author": "Fantasy Realm",
+      "date": "2024-03-26",
+      "likes": 423,
+      "views": 2341
+    },
+    {
+      "id": 9,
+      "title": "Underwater Kingdom",
+      "category": "Fantasy",
+      "prompt": "An underwater city with bioluminescent buildings, strange creatures, and coral towers",
+      "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=500&fit=crop",
+      "author": "Deep Sea",
+      "date": "2024-03-25",
+      "likes": 356,
+      "views": 1923
+    },
+    {
+      "id": 10,
+      "title": "Desert Sunset",
+      "category": "Nature",
+      "prompt": "Golden desert dunes at sunset with warm orange and pink tones, dramatic sky, and sand patterns",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=500&fit=crop",
+      "author": "Desert Dreams",
+      "date": "2024-03-24",
+      "likes": 445,
+      "views": 2567
+    },
+    {
+      "id": 11,
+      "title": "Neon Streets",
+      "category": "Architecture",
+      "prompt": "A cyberpunk street at night with neon signs in Japanese characters, rain reflections, and holographic ads",
+      "image": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=500&fit=crop",
+      "author": "Neon Night",
+      "date": "2024-03-23",
+      "likes": 534,
+      "views": 2987
+    },
+    {
+      "id": 12,
+      "title": "Magic Potion",
+      "category": "Fantasy",
+      "prompt": "A magical potion bottle glowing with mystical light, surrounded by crystals and enchanted ingredients",
+      "image": "https://images.unsplash.com/photo-1578866949228-8f21f4e59b24?w=500&h=500&fit=crop",
+      "author": "Alchemy Art",
+      "date": "2024-03-22",
+      "likes": 267,
+      "views": 1456
+    }
+  ]
+}
