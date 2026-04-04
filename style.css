@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Sidebar animations */
+.sidebar {
+    transition: transform 0.3s ease;
+}
+
+.sidebar.closed {
+    transform: translateX(-100%);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Image hover effect */
+.prompt-card img {
+    transition: transform 0.3s ease;
+}
+
+.prompt-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Loading animation */
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-pulse-custom {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Badge animation */
+.badge-new {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
