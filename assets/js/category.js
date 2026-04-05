@@ -22,7 +22,7 @@
     // Method 1: Menggunakan Set dan Map
     async function getCategoriesFromPrompts() {
         try {
-            const response = await fetch('data-prompts.json');
+            const response = await fetch('assets/data/data-prompts.json');
             const data = await response.json();
 
             // Get unique categories dari prompts
@@ -49,7 +49,7 @@
     // Method 2: Menggunakan reduce (lebih efficient)
     async function getCategoriesFromPromptsReduce() {
         try {
-            const response = await fetch('data-prompts.json');
+            const response = await fetch('assets/data/data-prompts.json');
             const data = await response.json();
 
             // Reduce untuk create unique categories
@@ -84,7 +84,7 @@
     // Method 3: Menggunakan filter dan findIndex
     async function getCategoriesFromPromptsFilter() {
         try {
-            const response = await fetch('data-prompts.json');
+            const response = await fetch('assets/data/data-prompts.json');
             const data = await response.json();
 
             const uniqueCategories = data.prompts

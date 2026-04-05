@@ -8,7 +8,7 @@ let currentSort = 'newest';
 // Load data
 async function loadData() {
     try {
-        const response = await fetch('data-prompts.json');
+        const response = await fetch('assets/data/data-prompts.json');
         const data = await response.json();
         allPrompts = data.prompts;
         filteredPrompts = [...allPrompts];
