@@ -25,8 +25,10 @@ function openModal(id) {
 
         <!-- Actions -->
         <div class="flex gap-3">
-            <button class="flex-1 px-6 py-3 bg-gray-200 text-gray-700 font-semibold rounded-lg hover:bg-gray-300 transition"
-            onclick="copyPrompt('${prompt.prompt}')">
+            <button 
+                class="flex-1 px-6 py-3 bg-gray-200 text-gray-700 font-semibold rounded-lg hover:bg-gray-300 transition"
+                data-prompt='${JSON.stringify(prompt.prompt)}'
+                onclick="copyPrompt(this)">
                 📋 Copy Prompt
             </button>
         </div>

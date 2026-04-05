@@ -1,8 +1,7 @@
-function copyPrompt(text) {
-    navigator.clipboard.writeText(text).then(() => {
-        alert('✅ Copied to clipboard!');
-    }).catch(err => {
-        alert('❌ Failed to copy');
-        console.error('Copy failed:', err);
-    });
+function copyPrompt(el) {
+  const prompt = JSON.parse(el.dataset.prompt)
+
+  navigator.clipboard.writeText(prompt)
+    .then(() => alert("Copied!"))
+    .catch(() => alert("Failed to copy"))
 }
